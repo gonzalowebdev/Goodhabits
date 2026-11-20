@@ -172,7 +172,9 @@ object Ic {
 
 val Mono = FontFamily.Monospace
 
-fun Modifier.press(onClick: () -> Unit, onLong: (() -> Unit)? = null): Modifier =
+fun Modifier.press(onClick: () -> Unit): Modifier = this.combinedClickable(onClick = onClick)
+
+fun Modifier.press(onClick: () -> Unit, onLong: (() -> Unit)?): Modifier =
     this.combinedClickable(onLongClick = onLong, onClick = onClick)
 
 @Composable
