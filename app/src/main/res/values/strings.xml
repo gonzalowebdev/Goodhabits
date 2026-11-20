@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Good Habits</string>
+    <string name="widget_desc">Cuadrícula de un hábito con botón para marcarlo</string>
+</resources>
